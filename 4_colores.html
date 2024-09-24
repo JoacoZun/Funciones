@@ -7,13 +7,36 @@
     <title>4 Colores-Teclado</title>
 </head>
 <body>
-    
-    <div id="blue" class="color-box blue"></div>
-    <div id="red" class="color-box red"></div>
-    <div id="green" class="color-box green"></div>
-    <div id="yellow" class="color-box yellow"></div>
-    <div id="key" class="color-box key"></div>
+    <div class="container">
+        <header>
+            <h1>Interacción con Colores y Teclado</h1>
+        </header>
 
+        <div class="main-content">
+            <!-- Condición 1: Divs clickeables -->
+            <section class="color-section">
+                <h2>Cambia el color al hacer clic</h2>
+                <div class="color-box blue" id="blue"></div>
+                <div class="color-box red" id="red"></div>
+                <div class="color-box green" id="green"></div>
+                <div class="color-box yellow" id="yellow"></div>
+            </section>
+
+            <!-- Condición 2: Cambiar color del div "key" -->
+            <section class="key-section">
+                <h2>Cambia el color del div 'key' con el teclado</h2>
+                <div class="color-box key" id="key"></div>
+                <p>Presiona las teclas <strong>a</strong>, <strong>s</strong>, <strong>d</strong> para cambiar el color.</p>
+            </section>
+
+            <!-- Condición 3: Crear nuevos divs -->
+            <section class="create-section">
+                <h2>Crea nuevos divs con colores</h2>
+                <p>Presiona las teclas <strong>q</strong>, <strong>w</strong>, <strong>e</strong> para crear nuevos divs de colores.</p>
+                <div id="new-div-container"></div>
+            </section>
+        </div>
+    </div>
 
     <script src="assets/js/scritp.js"></script>
 </body>
